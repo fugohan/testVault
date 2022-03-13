@@ -36,7 +36,8 @@ jobs:
   
     - name: save Page 
       run: |
-        git add public/*
+        mv public/ docs/
+        git add docs/*
         git commit -m "auto"
         git push origin master
 
