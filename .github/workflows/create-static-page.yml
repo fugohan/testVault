@@ -28,5 +28,9 @@ jobs:
     - name: create Webpage
       run: |
         python3 build.py
+    - name: save Page 
+    - uses: stefanzweifel/git-auto-commit-action@v4 # [G]
+      with: 
+        commit_message: Auto publish
 
     
