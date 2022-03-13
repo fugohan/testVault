@@ -4,7 +4,7 @@ import os
 from lettersmith import *
 import config
 
-environment = os.getenv('BUILD_ENV', 'development')
+environment = os.getenv('BUILD_ENV', 'deploy')
 build_config = config.deploy if environment == 'deploy' else config.development
 
 base_url = build_config.base_url
