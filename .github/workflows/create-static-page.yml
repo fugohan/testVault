@@ -33,12 +33,11 @@ jobs:
         # setup the username and email. I tend to use 'GitHub Actions Bot' with no email by default
         git config user.name "GitHub Actions Bot"
         git config user.email "<>"
-  
     - name: save Page 
       run: |
-#        rm docs/ -r
-#        rm lettersmith_py/ -r
-#        mv public/ docs/
+        rm docs/ -r
+        rm lettersmith_py/ -r
+        mv public/ docs/
         git add docs/*
         git commit -m "auto"
         git push origin master
