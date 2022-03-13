@@ -9,4 +9,4 @@ class Config:
 
 # Update each URL to your local and deploy URLs
 development = Config('file:///home/user/Documents/testVault/public/')
-deploy = Config('https://deployurlexample.com')
+deploy = Config('https://fugohan.github.io/testVault/')
