@@ -39,8 +39,9 @@ jobs:
         rm docs/ -r
         rm lettersmith_py/ -r
         mv public/ docs/
+        date > lastchange
         ls
-        git add docs/*
+        git add *
         git commit -m "auto"
         git push origin master
     - name: Deploy
