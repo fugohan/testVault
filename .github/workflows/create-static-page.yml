@@ -35,7 +35,7 @@ jobs:
         git config user.email "<>"
     - name: save Page 
       run: |
-        rm __pycache__
+        rm __pycache__ -r
         rm docs/ -r
         rm lettersmith_py/ -r
         mv public/ docs/
