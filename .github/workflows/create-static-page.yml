@@ -27,10 +27,17 @@ jobs:
         pip3 install -e .
     - name: create Webpage
       run: |
-        python3 build.py
+        python3 build.py      
+    - name: setup git config
+      run: |
+        # setup the username and email. I tend to use 'GitHub Actions Bot' with no email by default
+        git config user.name "GitHub Actions Bot"
+        git config user.email "<>"
+  
     - name: save Page 
-    - uses: stefanzweifel/git-auto-commit-action@v4 # [G]
-      with: 
-        commit_message: Auto publish
+      run: |
+        git add publish/*
+        git commit -m "auto"
+        git push origin master
 
     
