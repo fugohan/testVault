@@ -36,9 +36,9 @@ jobs:
   
     - name: save Page 
       run: |
-        rm docs/ -r
-        rm lettersmith_py/ -r
-        mv public/ docs/
+#        rm docs/ -r
+#        rm lettersmith_py/ -r
+#        mv public/ docs/
         git add docs/*
         git commit -m "auto"
         git push origin master
