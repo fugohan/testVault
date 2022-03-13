@@ -36,7 +36,7 @@ jobs:
   
     - name: save Page 
       run: |
-        git add publish/*
+        git add public/*
         git commit -m "auto"
         git push origin master
 
